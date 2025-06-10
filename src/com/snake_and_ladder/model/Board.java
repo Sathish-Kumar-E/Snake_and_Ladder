@@ -15,8 +15,8 @@ public class Board {
 	
 	private void initializeBoard(int boardSize) {
 		this.cells = new Cell[boardSize][boardSize];
-		for(int i = 0 ; i < cells.length ; i++) {
-			for(int j = 0 ; j < cells.length ; j++) {
+		for(int i = 0 ; i < boardSize ; i++) {
+			for(int j = 0 ; j < boardSize ; j++) {
 				cells[i][j] = new Cell();
 			}
 		}
