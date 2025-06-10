@@ -49,7 +49,7 @@ public class Board {
 		}
 	}
 	
-	private Cell getCell(int position) {
+	public Cell getCell(int position) {
 		int row = position / cells.length;
 		int col = position % cells.length;
 		return cells[row][col];
