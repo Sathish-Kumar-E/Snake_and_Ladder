@@ -9,6 +9,10 @@ public class Board {
 		addLadders(numberOfLadders);
 	}
 	
+	public Cell[][] getCells() {
+		return cells;
+	}
+	
 	private void initializeBoard(int boardSize) {
 		this.cells = new Cell[boardSize][boardSize];
 	}
