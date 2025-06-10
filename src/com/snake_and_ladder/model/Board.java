@@ -15,6 +15,11 @@ public class Board {
 	
 	private void initializeBoard(int boardSize) {
 		this.cells = new Cell[boardSize][boardSize];
+		for(int i = 0 ; i < cells.length ; i++) {
+			for(int j = 0 ; j < cells.length ; j++) {
+				cells[i][j] = new Cell();
+			}
+		}
 	}
 	
 	private void addSnakes(int numberOfSnakes) {
@@ -49,7 +54,7 @@ public class Board {
 		}
 	}
 	
-	private Cell getCell(int position) {
+	public Cell getCell(int position) {
 		int row = position / cells.length;
 		int col = position % cells.length;
 		return cells[row][col];
